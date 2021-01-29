@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "publishedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published"
+      ],
+      "required": true,
+      "default": "draft"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "author": {
+      "model": "writer",
+      "via": "articles"
+    },
+    "Data": {
+      "type": "date",
+      "required": true
+    },
+    "MassaTotal": {
+      "type": "integer"
+    },
+    "SosUnimed": {
+      "type": "integer"
+    },
+    "SosMedilar": {
+      "type": "integer"
+    },
+    "VendasNovas": {
+      "type": "integer"
+    }
+  }
+}

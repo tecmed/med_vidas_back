@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submenus",
+  "info": {
+    "name": "Submenu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "menu": {
+      "model": "menu"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vidas",
+  "info": {
+    "name": "Vida",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "PublishedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "Data": {
+      "type": "date"
+    },
+    "MassaTotal": {
+      "type": "integer"
+    },
+    "SosUnimed": {
+      "type": "integer"
+    },
+    "SosMedilar": {
+      "type": "integer"
+    },
+    "VendasNovas": {
+      "type": "integer"
+    },
+    "category": {
+      "model": "category",
+      "via": "vidas"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published"
+      ],
+      "default": "draft",
+      "required": true
+    }
+  }
+}

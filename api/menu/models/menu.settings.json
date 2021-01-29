@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu",
+  "info": {
+    "name": "Menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "submenus": {
+      "collection": "submenu"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
