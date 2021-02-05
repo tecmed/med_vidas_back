@@ -21,8 +21,12 @@
       "required": true
     },
     "vidas": {
-      "via": "category",
-      "collection": "vida"
+      "collection": "vida",
+      "via": "category"
+    },
+    "submenu": {
+      "model": "submenu",
+      "via": "submenu_category"
     }
   }
 }

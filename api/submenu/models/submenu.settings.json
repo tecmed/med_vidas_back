@@ -23,6 +23,13 @@
     "status": {
       "type": "boolean",
       "default": true
+    },
+    "category": {
+      "model": "category"
+    },
+    "submenu_category": {
+      "via": "submenu",
+      "model": "category"
     }
   }
 }

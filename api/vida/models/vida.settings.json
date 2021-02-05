@@ -31,8 +31,8 @@
       "type": "integer"
     },
     "category": {
-      "model": "category",
-      "via": "vidas"
+      "via": "vidas",
+      "model": "category"
     },
     "status": {
       "type": "enumeration",
