@@ -31,8 +31,8 @@
       "type": "integer"
     },
     "category": {
-      "via": "vidas",
-      "model": "category"
+      "model": "category",
+      "via": "vidas"
     },
     "status": {
       "type": "enumeration",
@@ -42,6 +42,9 @@
       ],
       "default": "draft",
       "required": true
+    },
+    "VendasCanceladas": {
+      "type": "integer"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vigencias",
+      "handler": "vigencia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vigencias/count",
+      "handler": "vigencia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vigencias/:id",
+      "handler": "vigencia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vigencias",
+      "handler": "vigencia.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vigencias/:id",
+      "handler": "vigencia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vigencias/:id",
+      "handler": "vigencia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

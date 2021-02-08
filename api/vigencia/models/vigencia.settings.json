@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vigencias",
+  "info": {
+    "name": "vigencia",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descricao": {
+      "type": "string"
+    },
+    "inicio": {
+      "type": "date"
+    },
+    "fim": {
+      "type": "date"
+    },
+    "category": {
+      "model": "category",
+      "via": "vigencia"
+    }
+  }
+}
