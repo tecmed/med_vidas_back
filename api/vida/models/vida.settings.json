@@ -19,16 +19,20 @@
       "type": "date"
     },
     "MassaTotal": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "SosUnimed": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "SosMedilar": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "VendasNovas": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "category": {
       "model": "category",
@@ -43,8 +47,13 @@
       "default": "draft",
       "required": true
     },
-    "VendasCanceladas": {
-      "type": "integer"
+    "CanceladosMedilar": {
+      "type": "integer",
+      "default": 0
+    },
+    "CanceladosUnimed": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
